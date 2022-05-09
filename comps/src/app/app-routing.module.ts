@@ -7,6 +7,11 @@ import { NotFoundComponent } from './not-found/not-found.component';
 project */
 const routes: Routes = [
   {
+    path: 'elements', 
+    loadChildren: () => 
+      import('./elements/elements.module').then(m => m.ElementsModule)
+  },
+  {
     path: '', component: HomeComponent
   },
   {
