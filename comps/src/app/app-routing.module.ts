@@ -23,7 +23,7 @@ const routes: Routes = [
   },
   {
     path: 'mods',
-    loadChildren: () => import('./views/views.module').then(m => m.ViewsModule)
+    loadChildren: () => import('./mods/mods.module').then(m => m.ModsModule)
   },
   {
     path: '', component: HomeComponent
