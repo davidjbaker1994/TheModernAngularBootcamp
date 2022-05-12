@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TableComponent implements OnInit {
   //Didn't work with 'data = []';
+  @Input('class') classNames = ''; //Once again, this is called input aliasing
   @Input() data: any[] = [];
   @Input() headers: any[] = [];
 
