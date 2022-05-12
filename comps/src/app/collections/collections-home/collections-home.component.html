@@ -9,9 +9,9 @@
 <div class="ui grid">
     <div class="four wide columns">
         <div class="ui vertical fluid tabular menu">
-            <a class="item" routerLink="./" routerLinkActive="active">Biography</a>
+            <a class="item" [routerLink]="['./']" routerLinkActive="active">Biography</a>
             <a class="item" routerLink="./companies" routerLinkActive="active">Companies</a>
-            <a class="item" routerLink="./partners" routerLinkActive="active">Partners</a>
+            <a class="item" [routerLink]="['./', 'partners']" routerLinkActive="active">Partners</a>
         </div>
     </div>
     <div class="twelve wide stretched column">
@@ -20,4 +20,6 @@
         </div>
     </div>
 </div>
+
+
 
