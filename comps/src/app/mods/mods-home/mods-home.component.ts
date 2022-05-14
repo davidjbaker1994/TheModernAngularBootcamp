@@ -12,7 +12,7 @@ export class ModsHomeComponent implements OnInit {
     { title: 'What does an orange taste like?', content: 'An orange tastes like an orange' },
     { title: 'What color is that cat', content: 'The cat is an orange color' }
   ];
-  
+
   constructor() { }
 
   ngOnInit(): void {
@@ -21,5 +21,4 @@ export class ModsHomeComponent implements OnInit {
   onClick() {
     this.modalOpen = !this.modalOpen;
   }
-
 }
