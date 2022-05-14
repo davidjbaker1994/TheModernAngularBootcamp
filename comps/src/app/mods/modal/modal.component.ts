@@ -18,4 +18,6 @@ export class ModalComponent implements OnInit {
     this.el.nativeElement.remove();
   }
 
+  
+
 }
